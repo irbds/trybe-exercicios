@@ -1,0 +1,43 @@
+.primaria:hover, .secundaria:hover, .complementar:hover, .escura:hover, .clara:hover{
+    border-style:double;
+}
+
+.primaria:hover{
+    background-color: yellow;
+}
+.secundaria:hover{
+    background-color: orange;
+}
+.complementar:hover{
+    background-color: purple;
+    height: 100px;
+}
+.escura:hover{
+    background-color: brown;
+}
+.clara:hover{
+    background-color: cyan;
+}
+
+.primaria h3{
+    color: purple;
+    font-style: italic;
+}
+
+.secundaria h3{
+    color: blue
+}
+
+.complementar h3{
+    color: yellow;
+    font-style: italic;
+}
+
+.escura h3{
+    color: green
+}
+
+.clara h3{
+    color: red;
+    font-style: italic;
+}
