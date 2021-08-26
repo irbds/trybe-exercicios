@@ -1,2 +1,7 @@
 # trybe-exercicios
-Todos exercicios da trybe separados por branch
+## Inicio dos aprendizados em javascript
+### conceitos basicos
+#### Variaveis
+#### if/else
+#### operadores
+#### switch/case
