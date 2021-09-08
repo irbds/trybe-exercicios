@@ -1,3 +1,4 @@
+//parte 1 -Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
 function isPali (frase) {
   let ilapSi = [];
   let result = 'a palavra é um Palindromo';
@@ -10,6 +11,19 @@ function isPali (frase) {
   }
   return result;
 }
-
-
 console.log(isPali ('arara'));
+
+//parte 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+console.log('');
+function maiorValor (valores) {
+  let indice = valores[0];
+  for (let index = 0; index < valores.length; index += 1) {
+    if (valores[index] > indice) {
+      indice = index;
+    }
+  }
+  console.log(indice);
+}
+
+maiorValor([-2, -3, -6, -7, -10, -1]);
+
