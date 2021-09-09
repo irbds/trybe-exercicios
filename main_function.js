@@ -22,8 +22,22 @@ function maiorValor (valores) {
       indice = index;
     }
   }
-  console.log(indice);
+  console.log("indice maior valor " + indice);
+}
+
+//parte 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+console.log('');
+function menorValor (valores) {
+  let menorVal = valores[0];
+  let indice = 0;
+  for (let index = 0; index < valores.length; index += 1) {
+    if (valores[index] < menorVal) {
+      menorVal = valores[index];
+      indice = index;
+    }
+  }
+  console.log("indice menor valor " + indice);
 }
 
 maiorValor([-2, -3, -6, -7, -10, -1]);
-
+menorValor([-2, -3, -6, -7, -5, -1]);
