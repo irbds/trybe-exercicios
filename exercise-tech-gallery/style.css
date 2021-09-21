@@ -27,3 +27,7 @@ header {
   color: #E8F7F2;
   justify-content: space-around;
 }
+
+.firstSection {
+  justify-content: center;  
+}
