@@ -17,3 +17,13 @@
   width: 25px;
   margin-left: 10px;
 }
+
+.flex-container {
+  display: flex;
+}
+
+header {
+  background-color: #323433;
+  color: #E8F7F2;
+  justify-content: space-around;
+}
