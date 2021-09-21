@@ -33,6 +33,8 @@ function showInformation() {
   for( let index = 0; index < nomeDosDados.length; index += 1) {
     let p = document.createElement('p');
     let p1 = document.createElement('p');
+    p.classList.add('pDado');
+    p1.classList.add('pDado');
     p1.innerText = nomeDosDados[index] + " :";
     p.innerText = formAbout[nomeDosDados[index]].value;
     dadosDiv.lastChild.appendChild(p1);

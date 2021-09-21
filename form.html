@@ -8,36 +8,43 @@
     <form action="" method="get" id="test">
       <!-- Dados pessoais -->
       <fieldset>
+        <!-- nome -->
         <div class="mb-3">
           <label class="form-label" for="name">nome:</label>
           <input class="form-control form-control-sm" type="text" maxlength="40" required name="name">
         </div>
 
+        <!-- email -->
         <div class="mb-3">
           <label class="form-label" for="email">email:</label>
           <input class="form-control form-control-sm" type="text" maxlength="50"required name="email">
         </div>
 
+        <!-- cpf -->
         <div class="mb-3">
           <label class="form-label" for="cpf">cpf:</label>
           <input class="form-control form-control-sm" type="text" maxlength="11" required name="cpf">
         </div>
 
+        <!-- endereco -->
         <div class="mb-3">
           <label class="form-label" for="endereco">endereco:</label>
           <input class="form-control form-control-sm" type="text" maxlength="200" required name="endereco">
         </div>
 
+        <!-- cidade -->
         <div class="mb-3">
           <label class="form-label" for="cidade">cidade:</label>
           <input class="form-control form-control-sm" type="text" maxlength="28" required name="cidade">
         </div>
 
+        <!-- estado -->
         <div class="mb-3">
           <label class="form-label" for="estado">qual seu estado:</label>
           <select class="form-select-sm" name="estado" required id="estado"></select>
         </div>
 
+        <!-- residencia -->
         <div class="form-check">
           <label class="form-check-label" for="moradia">tipo de residencia:</label>
           <ul>
@@ -51,21 +58,25 @@
       <!-- dados curriculo -->
       <fieldset>
 
+        <!-- resumo curriculo -->
         <div class="mb-3">
           <label class="form-floating" for="Resumo">Resumo do currículo:</label>
           <textarea class="form-control" required name="Resumo" maxlength="1000" id="" cols="50" rows="10" wrap="hard"></textarea>
         </div>
 
+        <!-- cargo -->
         <div class="mb-3">
           <label class="form-label" for="cargo">cargo:</label>
           <input class="form-control form-control-sm" type="text" name="cargo" id="cargo" maxlength="40" required>
         </div>
 
+        <!-- descricao -->
         <div class="mb-3">
           <label class="form-label" for="descricao">descricao:</label>
           <input class="form-control form-control-sm" type="text" name="descricao" id="descricao" maxlength="500" required>
         </div>
 
+        <!-- data -->
         <div class="mb-3">
           <label class="form-label" for="inicio">Data de inicio:</label>
           <input type="date" name="inicio" id="" required>
@@ -75,9 +86,9 @@
 
       <!-- botoes -->
       <div class="mb-3">
-        <button type="submit" id="submitButton">submit</button>
-        <button type="reset" id="resetButton">reset</button>
-        <button id="cleanLastdiv">remover ultimo dado</button>
+        <button type="submit" class="btn btn-success" id="submitButton">submit</button>
+        <button type="reset" class="btn btn-danger" id="resetButton">reset</button>
+        <button class="btn btn-warning" id="cleanLastdiv">remover ultimo dado</button>
       </div>
     </form>
 

@@ -1,3 +1,6 @@
+form {
+  margin-left: 25%;
+}
 
 select {
   width: 120px;
@@ -13,4 +16,13 @@ li {
 
 .form-control {
   width: 50%;
+}
+
+.pDado {
+  height: 0;
+}
+
+.dadosCurriculo {
+  border: solid 1px black;
+  padding: 10px 0;
 }
