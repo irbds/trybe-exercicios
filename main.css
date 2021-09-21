@@ -43,6 +43,8 @@ body {
   margin-right: 10px;
 }
 
+
+/* parte 2 */
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -78,6 +80,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  flex-basis: 350px;
 }
 
 .aside-container h3, h4 {
