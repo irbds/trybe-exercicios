@@ -83,11 +83,16 @@ const AgeBooks = books.map((book) => {
 
 // 3 - Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
 
-const FicFan = books.filter((book) =>
+const FicFans = books.filter((book) =>
   ((book.genre === 'Fantasia' || book.genre === 'Ficção Científica') ? book : '')
 );
   
-console.log(FicFan);
+console.log(FicFans);
 
 
 // 5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+
+const AutorFicFan = FicFans.map((FicFan) => FicFan.author.name);
+
+console.log(AutorFicFan.sort());
+
