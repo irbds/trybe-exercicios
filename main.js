@@ -89,4 +89,8 @@ const AutorFicFan = FicFans.map((FicFan) => FicFan.author.name);
 // 6 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
 const OldBooks = books.filter((book) => ((2021 - book.releaseYear > 60)));
 const OldBooksName = OldBooks.map((book) => book.name);
-console.log(OldBooksName);
+// console.log(OldBooksName);
+
+// 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+const startName = books.filter((book) => book.author.name[0] === 'J'&& book.author.name[4] === '.' && book.author.name[7] === '.');
+// console.log(startName[0].name);
