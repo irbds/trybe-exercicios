@@ -80,8 +80,20 @@ const book = books.reduce((acc, curr, index, array) => {
 }, '')
 console.log(book);
 
+// 3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+const mediaBooks = books.reduce((acc, curr, index, array) => {
+  if (index !== array.length - 1) {
+    acc += curr.releaseYear - curr.author.birthYear
+  }else {
+    acc += curr.releaseYear - curr.author.birthYear
+    acc = acc/array.length;
+  }
+  return acc
+}, 0)
+console.log(mediaBooks);
+
 // 4 - Encontre o livro com o maior nome.
-const maiorBook = books.reduce((acc, curr, index, array) => {
+const maiorBook = books.reduce((acc, curr) => {
   return ((acc.name.length > curr.name.length) ? acc : curr)
 })
 console.log(maiorBook);
