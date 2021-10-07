@@ -5,7 +5,7 @@ const arrays = [
   [4, 5, 6],
 ];
 const concatArrays = arrays.reduce((acc, curr) => acc.concat(curr), [])
-console.log(concatArrays);
+// console.log(concatArrays);
 
 
 // Para os exercícios 2, 3 e 4 considere o seguinte array:
@@ -78,7 +78,7 @@ const book = books.reduce((acc, curr, index, array) => {
   (acc = `${acc}${curr.author.name}.`) : 
   (acc = `${acc}${curr.author.name}, `))
 }, '')
-console.log(book);
+// console.log(book);
 
 // 3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 const mediaBooks = books.reduce((acc, curr, index, array) => {
@@ -90,10 +90,28 @@ const mediaBooks = books.reduce((acc, curr, index, array) => {
   }
   return acc
 }, 0)
-console.log(mediaBooks);
+// console.log(mediaBooks);
 
 // 4 - Encontre o livro com o maior nome.
 const maiorBook = books.reduce((acc, curr) => {
   return ((acc.name.length > curr.name.length) ? acc : curr)
 })
-console.log(maiorBook);
+// console.log(maiorBook);
+
+// 5 - Dada o array de nomes, retorne a quantidade de vezes em que aparecem a letra a maiúscula ou minúscula.
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+const letterAaTotal = names.reduce((acc, curr) => {
+  const letterAaIndex = curr.split('').reduce((acum, cont) => {
+    return ((cont === 'a' || cont === 'A') ? acum+=1 : acum )
+  }, 0)
+  acc += letterAaIndex;
+  return acc
+}, 0)
+console.log(letterAaTotal);
+
+// 6. - Agora vamos criar um novo array de objetos a partir das informações abaixo, onde cada objeto terá o formato { name: nome do aluno, average: media das notas } . Para isso vamos assumir que a posição 0 de notas refere-se ao aluno na posição 0 de alunos , aqui além de reduce será necessário utilizar também a função map . Dica: Você pode acessar o index do array dentro de map , e você pode ver o objeto esperado na constante expected .
