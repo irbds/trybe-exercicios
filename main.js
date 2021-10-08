@@ -35,8 +35,53 @@ const gunnar = {
 const personLikes = (arr) => {
   const {name, age, likes} = arr;
   return `${name} is ${age} years old and likes ${likes.join(', ')}.`;
-}
+};
 
-console.log(personLikes(alex)) // 'Alex is 26 years old and likes fly fishing.'
-console.log(personLikes(gunnar)) // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
+console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
+console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
 
+// 4 - Escreva uma função filterPeople que, dada uma lista de pessoas, retorna todas as pessoas australianas que nasceram no século 20:
+const peoples = [
+  {
+    name: 'Nicole',
+    bornIn: 1992,
+    nationality: 'Australian',
+  },
+  {
+    name: 'Harry',
+    bornIn: 2008,
+    nationality: 'Australian',
+  },
+  {
+    name: 'Toby',
+    bornIn: 1901,
+    nationality: 'Australian',
+  },
+  {
+    name: 'Frida',
+    bornIn: 1960,
+    nationality: 'Dannish',
+  },
+  {
+    name: 'Fernando',
+    bornIn: 2001,
+    nationality: 'Brazilian',
+  },
+];
+
+// escreva filterPeople abaixo
+const filterPeople = (people) => people.filter(
+  ({name, nationality, bornIn}) =>
+  nationality === 'Australian' && bornIn < 2000
+  )
+console.log(filterPeople(peoples));
+
+// 5 - Escreva a função swap , que dado um array de 3 elementos, retorna um novo array com o primeiro e terceiro elementos trocados. Detalhe: você precisa fazer essa função gastando 1 linha só:
+const myList = [1, 2, 3];
+
+// escreva swap abaixo
+const swap = ([a,b,c]) => [c,b,a];
+
+console.log(swap(myList));
+
+// 6 - Suponha que você esteja lidando com carros e, da forma como o problema lhe foi entregue, cada carro é modelado como um array. Porém, essa modelagem está baixo nível. Cria uma função toObject que, dada uma lista, retorna um objeto representando o carro:
